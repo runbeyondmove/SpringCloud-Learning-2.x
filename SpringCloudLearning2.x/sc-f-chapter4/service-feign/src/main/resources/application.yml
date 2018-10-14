@@ -1,0 +1,18 @@
+server:
+  port: 8066
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8060/eureka/
+
+spring:
+  application:
+    name: service-feign
+
+# 开启feign的断路器功能
+feign:
+  hystrix:
+    enabled: true

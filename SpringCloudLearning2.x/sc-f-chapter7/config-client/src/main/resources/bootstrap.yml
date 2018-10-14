@@ -1,0 +1,18 @@
+server:
+  port: 8069
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master #指明远程仓库的分支
+      profile: dev # 哪个环境的配置文件
+      uri: ["http://localhost:8068/"]
+      discovery:
+        enabled: true # 从配置中心读取文件
+        service-id: config-server # 配置中心的servieId，即服务名
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8070/eureka # 指明配置服务中心的网址

@@ -1,0 +1,12 @@
+server:
+  port: 8069
+
+spring:
+  application:
+    name: config-client
+  cloud:
+    config:
+      label: master #指明远程仓库的分支
+      profile: dev # 哪个环境的配置文件
+      uri: ["http://localhost:8068/"] # 指明配置服务中心的网址
+

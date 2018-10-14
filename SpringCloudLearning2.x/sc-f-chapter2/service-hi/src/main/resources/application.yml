@@ -1,0 +1,15 @@
+server:
+  port: 8062
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    # registerWithEureka: true #可不写
+    # fetchRegistry: true #可不写
+    serviceUrl:
+      defaultZone: http://localhost:8060/eureka/
+
+spring:
+  application:
+    name: service-hi
