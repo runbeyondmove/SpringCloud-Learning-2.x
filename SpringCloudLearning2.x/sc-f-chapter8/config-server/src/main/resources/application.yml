@@ -10,7 +10,7 @@ spring:
       server:
         label: master # 配置仓库的分支
         git:
-          uri: https://github.com/forezp/SpringcloudConfig/ # 配置git仓库地址
+          uri: https://github.com/runbeyondmove/SpringcloudConfig # 配置git仓库地址
           searchPaths: respo # 配置仓库路径
           username: # 访问git仓库的用户名
           password: # 访问git仓库的用户密码
